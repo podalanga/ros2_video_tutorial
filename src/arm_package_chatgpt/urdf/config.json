@@ -1,0 +1,8 @@
+{
+    "url": "https://cad.onshape.com/documents/30da139afa946a34500f76e3/w/f80ff5aeafcb824aa1d04926/e/38cc756b97aedec96cff65ae",
+    "output_format": "urdf",
+    "output_filename": "arm",
+    "package_name": "arm_package/urdf",
+    "assembly_name": "arm_assem_urdf_ready",
+    "robot_name": "arm_robot"
+}

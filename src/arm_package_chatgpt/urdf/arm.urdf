@@ -1,0 +1,237 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/30da139afa946a34500f76e3/w/f80ff5aeafcb824aa1d04926/e/38cc756b97aedec96cff65ae -->
+<robot name="arm_robot">
+  <!-- Link base -->
+  <link name="base">
+    <inertial>
+      <origin xyz="4.25651e-06 4.4033e-06 0.0208466" rpy="0 0 0"/>
+      <mass value="0.383555"/>
+      <inertia ixx="0.000786942" ixy="6.29296e-08" ixz="-1.00732e-07" iyy="0.000787043" iyz="3.11064e-08" izz="0.00135945"/>
+    </inertial>
+    <!-- Part base -->
+    <visual>
+      <origin xyz="6.34518e-08 -5.05245e-07 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/base.stl"/>
+      </geometry>
+      <material name="base_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.34518e-08 -5.05245e-07 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/base.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link turnable_base -->
+  <link name="turnable_base">
+    <inertial>
+      <origin xyz="-0.0011294 3.22087e-12 -0.013693" rpy="0 0 0"/>
+      <mass value="0.139197"/>
+      <inertia ixx="0.000116355" ixy="5.33302e-15" ixz="-9.5221e-07" iyy="0.000115505" iyz="-2.46512e-15" izz="0.000223737"/>
+    </inertial>
+    <!-- Part turnable_base -->
+    <visual>
+      <origin xyz="2.76539e-17 3.3678e-18 0" rpy="3.14159 -0 3.44632e-47"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/turnable_base.stl"/>
+      </geometry>
+      <material name="turnable_base_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.76539e-17 3.3678e-18 0" rpy="3.14159 -0 3.44632e-47"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/turnable_base.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link hood_link1_static -->
+  <link name="hood_link1_static">
+    <inertial>
+      <origin xyz="-0.000360238 0.0339206 -0.0144532" rpy="0 0 0"/>
+      <mass value="0.102256"/>
+      <inertia ixx="3.28294e-05" ixy="7.44279e-08" ixz="5.43718e-08" iyy="1.74776e-05" iyz="3.09252e-07" izz="3.61259e-05"/>
+    </inertial>
+    <!-- Part motor_housing_link1 -->
+    <visual>
+      <origin xyz="1.73472e-18 0.03261 0" rpy="3.14159 -0 -1.21822e-45"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/motor_housing_link1.stl"/>
+      </geometry>
+      <material name="motor_housing_link1_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.73472e-18 0.03261 0" rpy="3.14159 -0 -1.21822e-45"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/motor_housing_link1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part sg_ziji_15 -->
+    <visual>
+      <origin xyz="-0.019138 0.0196496 -0.01306" rpy="-3.14159 -2.07112e-31 -1.55683"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/sg_ziji_15.stl"/>
+      </geometry>
+      <material name="sg_ziji_15_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.019138 0.0196496 -0.01306" rpy="-3.14159 -2.07112e-31 -1.55683"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/sg_ziji_15.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link link1_static -->
+  <link name="link1_static">
+    <inertial>
+      <origin xyz="-0.103523 1.98779e-06 0.0189128" rpy="0 0 0"/>
+      <mass value="0.136423"/>
+      <inertia ixx="3.9192e-05" ixy="4.81046e-09" ixz="1.02138e-06" iyy="0.000267191" iyz="2.44504e-09" izz="0.000247026"/>
+    </inertial>
+    <!-- Part sg_ziji_15_2 -->
+    <visual>
+      <origin xyz="-0.145322 4.23273e-16 0.037775" rpy="1.5708 -8.62508e-17 3.14159"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/sg_ziji_15.stl"/>
+      </geometry>
+      <material name="sg_ziji_15_2_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.145322 4.23273e-16 0.037775" rpy="1.5708 -8.62508e-17 3.14159"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/sg_ziji_15.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 1st_link_power -->
+    <visual>
+      <origin xyz="-0.124797 0 -0.004" rpy="-4.55734e-19 1.96016e-26 0"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/1st_link_power.stl"/>
+      </geometry>
+      <material name="1st_link_power_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.124797 0 -0.004" rpy="-4.55734e-19 1.96016e-26 0"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/1st_link_power.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 1st_link_free -->
+    <visual>
+      <origin xyz="-0.124797 3.29597e-17 0.04125" rpy="3.14159 1.53446e-15 -1.18593e-19"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/1st_link_free.stl"/>
+      </geometry>
+      <material name="1st_link_free_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.124797 3.29597e-17 0.04125" rpy="3.14159 1.53446e-15 -1.18593e-19"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/1st_link_free.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link 2nd_link -->
+  <link name="2nd_link">
+    <inertial>
+      <origin xyz="-0.0709873 -1.27673e-07 -0.000482645" rpy="0 0 0"/>
+      <mass value="0.0330122"/>
+      <inertia ixx="3.2577e-06" ixy="1.99392e-10" ixz="5.71628e-07" iyy="4.59813e-05" iyz="-2.38136e-12" izz="4.89015e-05"/>
+    </inertial>
+    <!-- Part 2nd_link -->
+    <visual>
+      <origin xyz="-0.124797 2.77556e-17 -0.004" rpy="3.05639e-26 -1.79979e-18 -7.57937e-25"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/2nd_link.stl"/>
+      </geometry>
+      <material name="2nd_link_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.124797 2.77556e-17 -0.004" rpy="3.05639e-26 -1.79979e-18 -7.57937e-25"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/2nd_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link 2nd_link_2 -->
+  <link name="2nd_link_2">
+    <inertial>
+      <origin xyz="-0.00739037 -0.00600013 -0.0342826" rpy="0 0 0"/>
+      <mass value="0.0330122"/>
+      <inertia ixx="3.2577e-06" ixy="1.99392e-10" ixz="5.71628e-07" iyy="4.59813e-05" iyz="-2.38136e-12" izz="4.89015e-05"/>
+    </inertial>
+    <!-- Part 2nd_link_2 -->
+    <visual>
+      <origin xyz="-0.0611997 -0.006 -0.0378" rpy="-1.27203e-15 1.024e-16 1.46746e-15"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/2nd_link.stl"/>
+      </geometry>
+      <material name="2nd_link_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0611997 -0.006 -0.0378" rpy="-1.27203e-15 1.024e-16 1.46746e-15"/>
+      <geometry>
+        <mesh filename="package://arm_package_chatgpt/urdf/assets/2nd_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from 2nd_link to 2nd_link_2 -->
+  <joint name="link2_fixed_m3p" type="fixed">
+    <origin xyz="-0.0635969 -0.006 0.004" rpy="-3.14159 -1.79979e-18 -7.57937e-25"/>
+    <parent link="2nd_link"/>
+    <child link="2nd_link_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from link1_static to 2nd_link -->
+  <joint name="link2_m3f_3" type="revolute">
+    <origin xyz="-0.145322 -2.60209e-17 -2.5e-05" rpy="-1.03088e-15 -2.13805e-16 -1.5708"/>
+    <parent link="link1_static"/>
+    <child link="2nd_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from hood_link1_static to link1_static -->
+  <joint name="link1_m2p_2" type="revolute">
+    <origin xyz="-0.019138 0.0196496 -0.01306" rpy="-3.12763 -1.5708 0"/>
+    <parent link="hood_link1_static"/>
+    <child link="link1_static"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from turnable_base to hood_link1_static -->
+  <joint name="hood_turntable" type="fixed">
+    <origin xyz="0.03261 4.59399e-18 -0.0225" rpy="7.71847e-15 3.0885e-16 1.5708"/>
+    <parent link="turnable_base"/>
+    <child link="hood_link1_static"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from base to turnable_base -->
+  <joint name="yaw_rotate_1" type="revolute">
+    <origin xyz="4.39041e-05 -5.05245e-07 0.05" rpy="-3.14159 7.71847e-15 -1.76863e-30"/>
+    <parent link="base"/>
+    <child link="turnable_base"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>

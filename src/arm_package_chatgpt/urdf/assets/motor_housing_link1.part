@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "30da139afa946a34500f76e3",
+    "documentMicroversion": "a8d951459fa1c367c09d76b0",
+    "elementId": "fa6c32d3631a4669b1f06bca",
+    "fullConfiguration": "default",
+    "id": "M8X69RZ2TJicPSoc2",
+    "isStandardContent": false,
+    "name": "motor_housing_link1 <2>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

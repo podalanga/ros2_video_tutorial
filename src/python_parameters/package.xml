@@ -4,7 +4,7 @@
   <name>python_parameters</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="joshuajohn.lvj@gmail.com">podalanga</maintainer>
+  <maintainer email="podalanga@email.com">podalanga</maintainer>
   <license>TODO: License declaration</license>
 
   <exec_depend>rclpy</exec_depend>

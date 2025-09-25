@@ -19,7 +19,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='podalanga',
-    maintainer_email='joshuajohn.lvj@gmail.com',
+    maintainer_email='podalanga@email.com',
     description='TODO: Package description',
     license='Apache-2.0',
     tests_require=['pytest'],

@@ -13,7 +13,7 @@ def generate_launch_description():
                 FindPackageShare('launch_tutorial'),
                 'launch',
                 'example_substitutions.launch.py'
-            ]),
+            ]), 
             launch_arguments={
               'turtlesim_ns': 'turtlesim2',
                 'use_provided_red': 'True',
