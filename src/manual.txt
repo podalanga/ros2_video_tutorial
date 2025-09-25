@@ -1,0 +1,30 @@
+How to start this?
+
+Watch kevin wood. he will revise you from basics and the codes he took are from the documentation. DO NOT follow his entire tutorial -->pitch for extortion
+Always have the docs open in your side
+
+always create a src in workstation. then go to that src and create packages not in the base directory of workstation
+
+remember to look into these commands importantly
+1. ros2 pkg create --build-type ament_python --node-name <node_name> <package_name> --dependencies <dependencies : like rclpy>
+2. colcon build --symlink-install --packages-select <package_name> (symlink install to create symlinks --> ensures you need not to do colcon build for
+every changes) (you can also use --executor sequential to prevent the computer from overloading)
+3. always: source ./install/local_setup.zsh from the base directory this will connect then properly with the terminal
+
+points to remember:
+1. package.xml should be properly updated
+2. setup.py should be properly updated
+
+Most issues happen with the bus names (like topic name, service bus names) check them first. Then check the setup.py and package.xml
+
+Remember when you add dependencies, use <exec_depend> in package.xml for pure pyhton dependencies (as python files dont need building unlike Cpp packages -->if thats the case use <build>). Also the ros2 pkg create .... --dependencies creates <depend> not <exec_depend> so be careful.
+
+
+Here is the order you should follow for revision:
+1. Kevin wood basic theory introduction
+2. py_pubsub
+3. py_srvcli
+4. tutorial_interfaces then new_format_msg
+5. python_parameters
+6. action docs
+7. launch ->py_launch_ex (along with docs) ->launch_tutorial

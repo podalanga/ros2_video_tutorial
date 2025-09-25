@@ -1,0 +1,58 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+*.egg-info/
+
+# Colcon artifacts
+.colcon_install_layout
+.colcon_build_layout
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.#*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.orig
+*.rej
+
+# Logs
+*.log
+
+# Configuration files (optional - remove if you want to track them)
+*.yaml.bak
+*.yml.bak
+
+# Custom workspace files
+COLCON_IGNORE
