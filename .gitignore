@@ -2,6 +2,7 @@
 build/
 install/
 log/
+ros_tutorials/
 *.egg-info/
 
 # Colcon artifacts
